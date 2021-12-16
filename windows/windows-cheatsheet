@@ -1,0 +1,211 @@
+**************
+Windows cmd: *
+**************
+[netstat]
+netstat -anob
+
+[ipconfig]
+
+msconfig
+regedit
+services.msc
+gpedit.msc
+wf.msc
+wmic startup
+
+
+***************
+Windows soft: *
+***************
+cports-x64
+(monitoring connexions / ports / services [gui])
+
+
+*******************
+Windows registry :*
+*******************
+[starting / boot / startup]
+
+HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+Toutes les valeurs de cette clé sont exécutées
+
+HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
+Toutes les valeurs de cette clé sont exécutées puis les valeurs sont supprimées
+
+HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnceEx
+Valeurs exécutées par Windows Desktop Update component 'W98, W2000 et IE 4.0' - plusieurs sous-clés 0001 à 000n et "Depend"
+
+HKLM\Software\Microsoft\Windows\CurrentVersion\RunServices
+Toutes les valeurs de cette clé sont lancées en tant que services
+
+HKLM\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce
+Toutes les valeurs de cette clé sont lancées en tant que services puis les valeurs sont supprimées
+
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+Toutes les valeurs de cette clé sont exécutées
+
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+Toutes les valeurs de cette clé sont exécutées puis les valeurs sont supprimées
+
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnceEx
+Valeurs exécutées par Windows Desktop Update component 'W98, W2000 et IE 4.0' - plusieurs sous-clés 0001 à 000n et "Depend"
+
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunServices
+Toutes les valeurs de cette clé sont lancées en tant que services
+
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce
+Toutes les valeurs de cette clé sont lancées en tant que services puis les valeurs sont supprimées
+
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Setup\
+Normalement utilisé uniquement par "Setup". Affiche une boite de dialogue de progression tandis que les clés sont exécutées, une à la fois.
+
+HKU\.Default\Software\Microsoft\Windows\CurrentVersion\Run\
+Similaire à la clé Run de HKCU (HKEY_CURRENT_USER).
+
+HKU\.Default\Software\Microsoft\Windows\CurrentVersion\RunOnce\
+Similaire à la clé RunOnce de HKCU (HKEY_CURRENT_USER).
+
+HKU\nnnnnn\Software\Microsoft\Windows\CurrentVersion\Run
+HKU\nnnnnn\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKU\nnnnnn\Software\Microsoft\Windows\CurrentVersion\RunOnceEx
+HKU\nnnnnn\Software\Microsoft\Windows\CurrentVersion\RunServices
+HKU\nnnnnn\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce
+nnnnnn étant un GUID chiffré d'utilisateur
+
+
+Les clés suivantes sont utilisées : Si les clés suivantes n'ont pas la valeur "\"%1\" %*" comme montrée ci-après mais que celle-ci est changé en quelque chose comme "\"unnomdefichierquelconque.exe %1\" %*" alors le fichier est invoqué automatiquement.
+
+[HKEY_CLASSES_ROOT\exefile\shell\open\command] ="\"%1\" %*"
+Exécuté chaque fois qu'un fichier .EXE (Executable) est sollicité.
+
+[HKEY_CLASSES_ROOT\comfile\shell\open\command] ="\"%1\" %*"
+Exécuté chaque fois qu'un fichier .COM (Command) est sollicité.
+
+[HKEY_CLASSES_ROOT\batfile\shell\open\command] ="\"%1\" %*"
+Exécuté chaque fois qu'un fichier .BAT (Batch Command) est sollicité.
+
+[HKEY_CLASSES_ROOT\htafile\Shell\Open\Command] ="\"%1\" %*"
+Exécuté chaque fois qu'un fichier .hta (Hypertext Application) est sollicité.
+
+[HKEY_CLASSES_ROOT\piffile\shell\open\command] ="\"%1\" %*"
+Exécuté chaque fois qu'un fichier .PIF (Portable Interchange Format) est sollicité.
+
+HKEY_CLASSES_ROOT\vbsfile\shell\open\command\
+Exécuté chaque fois qu'un fichier .VBS (Visual Basic Script) est sollicité.
+
+HKEY_CLASSES_ROOT\vbefile\shell\open\command\
+Exécuté chaque fois qu'un fichier .VBE (Encoded Visual Basic Script) est sollicité.
+
+HKEY_CLASSES_ROOT\jsfile\shell\open\command\
+Exécuté chaque fois qu'un fichier .JS (Javascript) est sollicité.
+
+HKEY_CLASSES_ROOT\jsefile\shell\open\command\
+Exécuté chaque fois qu'un fichier .JSE (Encoded Javascript) est sollicité.
+
+HKEY_CLASSES_ROOT\wshfile\shell\open\command\
+Exécuté chaque fois qu'un fichier .WSH (Windows Scripting Host) est sollicité.
+
+HKEY_CLASSES_ROOT\wsffile\shell\open\command\
+Exécuté chaque fois qu'un fichier .WSF (Windows Scripting File) est sollicité.
+
+HKEY_CLASSES_ROOT\scrfile\shell\open\command\
+Exécuté chaque fois qu'un fichier .SCR (Screen Saver) est sollicité.
+
+[HKEY_LOCAL_MACHINE\Software\CLASSES\batfile\shell\open\command] ="\"%1\" %*"
+
+[HKEY_LOCAL_MACHINE\Software\CLASSES\comfile\shell\open\command] ="\"%1\" %*"
+
+[HKEY_LOCAL_MACHINE\Software\CLASSES\exefile\shell\open\command] ="\"%1\" %*"
+
+[HKEY_LOCAL_MACHINE\Software\CLASSES\htafile\Shell\Open\Command] ="\"%1\" %*"
+
+[HKEY_LOCAL_MACHINE\Software\CLASSES\piffile\shell\open\command] ="\"%1\" %*"
+
+
+Méthode utilisée, par exemple, par le RAT SubSeven 2.2
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components
+Toutes les sous clés sont gérées, surtout les valeurs StubPath de chaque sous clés
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\ Currentversion\explorer\User shell folders
+
+Autres méthodes diverses
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon
+Cette valeur est exécutée après le login.
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\
+Toutes ses sous-clés sont à surveiller dont, particulièrement, les valeurs "StaticVXD" de chaque sous clé.
+
+HKEY_CURRENT_USER\Control Panel\Desktop
+La valeur "scrnsave.exe" (économiseur d'écran" est à surveiller. C'est elle qui est lancée lorsque votre économiseur d'écran s'active. La quasi totalité des économiseurs d'écran, particulièrement les gratuits, utilisés en remplacement de celui d'origine, son des trojans cachant un backdoor ou un keylogger etc. ...
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager
+Les fichiers listés dans "BootExecute" sont à regarder. Il s'agit d'applications en mode natif exécutées avant le démarrage de Windows.
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\
+Liste des services à démarrage paramétré sur le mode "automatique". Ils sont exécuté avant le login utilisateur.
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Winsock2\ Parameters\Protocol_Catalog\Catalog_Entries\
+Layered Service Providers, exécuté avant le login utilisateur.
+
+HKEY_LOCAL_MACHINE\System\Control\WOW\cmdline
+Exécuté lorsqu'une application Windows en 16bits est exécuté.
+
+HKEY_LOCAL_MACHINE\System\Control\WOW\wowcmdline
+Exécuté lorsqu'une application Dos en 16bits est exécuté.
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit
+Exécuté au login d'un utilisateur.
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ ShellServiceObjectDelayLoad\
+Exécuté par explorer.exe dès qu'il s'est chargé.
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\run
+Exécuté au login d'un utilisateur.
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\load
+Exécuté au login d'un utilisateur.
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ Policies\Explorer\run\
+Les sous valeurs sont exécutées lorsque l'explorateur s'initialise.
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ Policies\Explorer\run\
+Les sous valeurs sont exécutées lorsque l'explorateur s'initialise.
+
+Icq Inet - un cas particulier
+[HKEY_CURRENT_USER\Software\Mirabilis\ICQ\Agent\Apps\test]
+"Path"="test.exe"
+"Startup"="c:\\test"
+"Parameters"=""
+"Enable"="Yes"
+
+[HKEY_CURRENT_USER\Software\Mirabilis\ICQ\Agent\Apps\]
+Cette clé spécifie que toutes les applications seront exécutées si ICQNET détecte une connexion Internet.
+
+[HKEY_LOCAL_MACHINE\Software\CLASSES\ShellScrap] ="Scrap object" "NeverShowExt"=""
+Cette clé modifie vos spécifications d'extensions de fichiers.
+
+
+[dll startup]
+32 bit DLL on 32 bit system :
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs] 
+
+64 bit DLL on 64 bit system :
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs]
+
+32 bit DLL on 64 bit system:
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs] 
+*****************
+Windows folder :*
+*****************
+
+[starting / boot / startup]
+C:\Users\Douwi\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 
+W+r: shell:startup
+
+C:\ProgramData\Microsoft\Windows\Menu Démarrer\Programmes\Démarrage 
+W+r: shell:common startup
+
+-----------------------------------------------------------
+http://assiste.com.free.fr/p/abc/a/demarrage_de_windows.html
