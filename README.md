@@ -18,7 +18,7 @@ rectangle_draw.c  | Light c code to draw rectangle in ascii with custom size.
 
 ### Commands :
 
-Allow commit without message (/!\ "-a" auto stage files that have been modified but not newly created) :
+Allow commit without message ("-a" auto stage files that have been modified but not newly created) :
 ```
 git commit -a --allow-empty-message -m ""
 ```
