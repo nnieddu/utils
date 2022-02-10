@@ -1,7 +1,9 @@
 # [utils]
 
 ### Links :
-https://sourceware.org/projects.html  | links to lot of sources. 
+https://sourceware.org/projects.html       | links to lot of sources. 
+https://catonmat.net/tools                 | usefuls various tools
+https://rosettacode.org/wiki/Rosetta_Code  | lot of good code sample / functions
 
 ### Windows :
 fw_block_all_exe.bat  | script pour bloquer/gerer plusieurs .exe a la fois dans le firewall. 
