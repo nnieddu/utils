@@ -2,7 +2,7 @@
 
 ### Links :
 https://sourceware.org/projects.html &nbsp;&nbsp;&nbsp;&nbsp;| links to lot of sources.   
-https://catonmat.net/tools &nbsp;&nbsp;&nbsp;&nbsp;| usefuls various tools  
+https://catonmat.net/tools &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| usefuls various tools  
 https://rosettacode.org/wiki/Rosetta_Code &nbsp;&nbsp;&nbsp;&nbsp;| lot of good code sample / functions  
   
 ### Windows :
