@@ -10,7 +10,15 @@ fw_block_all_exe.bat  | script pour bloquer/gerer plusieurs .exe a la fois dans 
 -cheatsheet
 
 ### Unix :
-
+```
+sudo apt install moreutils
+```
+Useful package with some tools more infos here => https://packages.debian.org/unstable/utils/moreutils
+Permit to see errno code fast in cli :
+```
+$ errno 98
+EADDRINUSE 98 Address already in use
+``` 
 ### Ubuntu
 restore_and_backup_apt_source_list.sh  | script to backup and restore default apt source liste. 
 Ubuntu/backup  | sources.list backup
