@@ -32,3 +32,26 @@ Allow commit without message ("-a" auto stage files that have been modified but 
 ```
 git commit -a --allow-empty-message -m ""
 ```
+
+
+### little and big endian : 2 method
+```
+fisrt with builtin:
+	uint32_t be = __builtin_bswap32(port);
+	printf(" Big endian big=%x\n", be);
+  
+second with c function:
+	unsigned int little=0x1234578, big = 0;
+	unsigned char tmp = 0;
+
+	printf("Little endian little= %x \n", little);
+
+	for(int l = 0; l < 4; l++) 
+	{
+    tmp = 0;
+		tmp = little | tmp;
+		big = tmp | (big << 8);
+		little = little >> 8;
+	}
+	printf("Big endian big =%x \n", big);
+  ```
