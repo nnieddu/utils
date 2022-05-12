@@ -35,14 +35,16 @@ git commit -a --allow-empty-message -m ""
 
 
 #### little and big endian : 2 method
-```
+
 fisrt with builtin:
+```
 	uint32_t be = __builtin_bswap32(port);
 	printf(" Big endian big=%x\n", be);
+```
   
   
-  
-second with c function:
+second with C function:
+```
 	unsigned int little=0x1234578, big = 0;
 	unsigned char tmp = 0;
 
