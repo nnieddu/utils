@@ -50,7 +50,7 @@ second with c function:
 
 	for(int l = 0; l < 4; l++) 
 	{
-    tmp = 0;
+    		tmp = 0;
 		tmp = little | tmp;
 		big = tmp | (big << 8);
 		little = little >> 8;
