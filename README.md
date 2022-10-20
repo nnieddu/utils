@@ -1,6 +1,20 @@
 # [utils]
 
 ### Links :
+
+#### Frontend 
+https://caniuse.com  
+   
+https://htmlcheatsheet.com/  
+  
+https://bennettfeely.com/  
+https://css-tricks.com/  
+
+https://flexbox.help/  
+https://grid.layoutit.com/  
+  
+  
+#### others :
 https://sourceware.org/projects.html | links to lot of sources.   
 https://catonmat.net/tools | usefuls various tools  
 https://rosettacode.org/wiki/Rosetta_Code | lot of good code sample / functions  
