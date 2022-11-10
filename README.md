@@ -6,7 +6,8 @@
 https://caniuse.com  
    
 https://htmlcheatsheet.com/  
-  
+
+https://www.magicpattern.design/tools
 https://bennettfeely.com/  
 https://css-tricks.com/  
 
