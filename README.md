@@ -5,11 +5,12 @@
 #### Frontend 
 https://caniuse.com  
    
-https://htmlcheatsheet.com/  
-
-https://www.magicpattern.design/tools
-https://bennettfeely.com/  
-https://css-tricks.com/  
+https://htmlcheatsheet.com/   
+  
+https://www.magicpattern.design/tools   
+https://bennettfeely.com/     
+https://css-tricks.com/   
+https://www.inventiontricks.com/  
 
 https://flexbox.help/  
 https://grid.layoutit.com/  
