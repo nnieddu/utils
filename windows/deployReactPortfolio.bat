@@ -1,5 +1,5 @@
 @echo off
-npm run build &&
+@REM npm run build
 echo "--------------------------------"
 echo "--------------------------------"
 echo "--------- FIN DU BUILD ---------"
