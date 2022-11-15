@@ -18,6 +18,10 @@ echo "--------------------------------"
 echo "--------------------------------"
 echo ""
 echo ""
+cd "nnieddu.github.io\"
+git rm -rf "static\"
+cd ..
+dir
 xcopy /E /Y "build\*" "nnieddu.github.io\."
 cd "nnieddu.github.io\"
 echo ""
@@ -29,7 +33,7 @@ echo "--------------------------------"
 echo "--------------------------------"
 echo ""
 echo ""
-git pull
+@REM git pull
 echo ""
 echo ""
 echo "--------------------------------"
