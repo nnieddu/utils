@@ -46,29 +46,29 @@ git add *
 git commit -m %1
 git push
 echo --------------------------------
-echo --------- PUSH RAW CODE --------
+echo ------ FIN PUSH RAW CODE -------
 echo --------------------------------
 echo:
 echo:
 cd "nnieddu.github.io\"
-git rm -rf "static\"
+git rm -rf "static"
 cd ..
-dir
-xcopy /E /Y "build\*" "nnieddu.github.io\."
+pwd
+xcopy /E /Y "build\*" ".\nnieddu.github.io\."
 cd "nnieddu.github.io\"
 echo:
 echo:
 echo --------------------------------
 echo --------- FIN DE COPY ----------
 echo --------------------------------
-echo:
-echo:
+@REM echo:
+@REM echo:
 @REM git pull
-echo:
-echo:
-echo --------------------------------
-echo --------- FIN DU PULL ----------
-echo --------------------------------
+@REM echo:
+@REM echo:
+@REM echo --------------------------------
+@REM echo --------- FIN DU PULL ----------
+@REM echo --------------------------------
 echo:
 echo:
 git add *
