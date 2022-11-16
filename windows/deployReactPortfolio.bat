@@ -1,24 +1,3 @@
-```
-  "scripts": {
-    "mybuild": "npm run sass && npm run prefix && deployScript.bat",
-    "sass": "sass ./src/styles/App.scss:./src/styles/App.css --style compressed",
-    "prefix": "postcss ./src/styles/App.css --use autoprefixer -d ./src/styles/"
-    },
-    "browserslist": {
-      "production": [
-      "last 4 versions",
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 4 chrome version",
-      "last 4 firefox version",
-      "last 4 safari version"
-    ]
-  }
-```
-  
 @REM [100m !ESC![100m Black !ESC![0m
 @REM [101m !ESC![101m Red !ESC![0m
 @REM [102m !ESC![102m Green !ESC![0m
@@ -52,8 +31,7 @@ echo:
 echo:
 cd "nnieddu.github.io\"
 git rm -rf "static"
-cd ..
-pwd
+cd ".."
 xcopy /E /Y "build\*" ".\nnieddu.github.io\."
 cd "nnieddu.github.io\"
 echo:
