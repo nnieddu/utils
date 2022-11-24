@@ -1,3 +1,7 @@
+package.json : scripts : "mybuild": "npm run sass && npm run prefix && react-scripts build && deployScript.bat",
+A LANCER AVEC : npm run mybuild  "MESSAGE DE COMMIT"
+
+
 @REM [100m !ESC![100m Black !ESC![0m
 @REM [101m !ESC![101m Red !ESC![0m
 @REM [102m !ESC![102m Green !ESC![0m
@@ -33,7 +37,7 @@ cd "nnieddu.github.io\"
 git rm -rf "static"
 cd ".."
 xcopy /E /Y "build\*" ".\nnieddu.github.io\."
-cd "nnieddu.github.io\"
+cd "nnieddu.github.io\cv"
 echo:
 echo:
 echo --------------------------------
@@ -49,6 +53,12 @@ echo --------------------------------
 @REM echo --------------------------------
 echo:
 echo:
+git add *
+git commit -m %1
+git push
+
+cd ".."
+
 git add *
 git commit -m %1
 git push
