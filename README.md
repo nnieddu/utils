@@ -9,6 +9,7 @@ https://htmlcheatsheet.com/
   
 https://www.magicpattern.design/tools   
 https://bennettfeely.com/     
+https://www.cssportal.com/css-clip-path-generator/   
 https://css-tricks.com/   
 https://www.inventiontricks.com/  
 
