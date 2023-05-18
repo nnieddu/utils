@@ -1,4 +1,5 @@
 # [utils]
+### firefox devtools param (about:config) : devtools.netmonitor.responseBodyLimit
 
 ### Links :
 
