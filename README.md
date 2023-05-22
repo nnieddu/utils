@@ -81,7 +81,7 @@ second with C function:
 	printf("Big endian big =%x \n", big);
   ```
 
-#Hack 
+#Hack  
 nuclei => bug scanner
 nuclei -target url
 -------
