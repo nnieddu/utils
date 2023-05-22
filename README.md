@@ -80,3 +80,15 @@ second with C function:
 	}
 	printf("Big endian big =%x \n", big);
   ```
+
+#Hack 
+nuclei => bug scanner
+nuclei -target url
+-------
+nikto => scan de server/app et enumeration domaine et arborescence
+nikto -h url
+-------
+Owasp ZAP => vuln scan
+------
+wapiti => vuln scan
+wapiti -u url
